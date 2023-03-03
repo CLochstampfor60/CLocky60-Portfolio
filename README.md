@@ -32,7 +32,7 @@ In other words...
 Application:
 <!-- -Repository has a unique name -->
 -Webpage shows developer's name, recent photo (or avatar)
-	-Also, include links to sections About Them, their Work, and how to Contact Him.
+	-Also, include links to sections About Me, their Work, and how to Contact Him.
 -Links work, scrolling down to correct and corresponding section(s).
 -Click on section, scrolls to section with titled images of developer's application.
 -Application resembles the mock-up functionality provided in the Challenge instructions.
