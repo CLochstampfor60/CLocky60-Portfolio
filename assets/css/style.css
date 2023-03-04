@@ -22,8 +22,31 @@ main {
   margin-top: 2%;
 }
 
+main {
+	background-color: var(--secondary);
+	color: var(--primary);
+}
+
+aside {
+	flex: 1;
+	padding: 75px;
+	background-color: var(--secondary);
+	color: var(--primary);
+	font-size: 300%;
+}
+
+.work {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .main-header {
   display: flex;
+	flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px;
   background: var(--primary);
@@ -35,16 +58,51 @@ main {
 	color: var(--secondary);
 }
 
-.card {
-  flex: 1 0 200px;
-  padding: 10px;
-  text-align: center;
+.hero {
+	height: 275px;
+	width: 100%;
+	margin-bottom: 25px;
+	background-image: #;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-container {
+	text-align: right;
+}
+.card { 
   border-style: solid;
   border-width: 1px;
+	border-radius: 10px;
+	padding: 10px;
+	flex: 0 0 400px;
 }
 
 .card header {
   padding: 20px;
   background-color: var(--primary);
-  color: var(--third);
+  color: var(--secondary);
 }
+
+.card p {
+	text-align;
+}
+
+.card img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+footer {
+  padding: 20x;
+  text-align: right;
+  background: var(--primary);
+  color:var(--secondary);
+}
+
