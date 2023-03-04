@@ -1,167 +1,50 @@
-/* Foundation of the webpage */
-
-
-html {
-	margin: 0;
-	padding: 0;
+:root	{
+	--primary: #234e6d;
+	--secondary: #D0D0D0;
+	--third: lime;
+	--pop: #122738;
 }
 
 * {
-	box-sizing: border-box;
-	padding: 0;
+  box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 }
 
 body {
-	font-size: medium;
-	font-family: 'Courier New', Courier, monospace;
-	background-color:	 #D0D0D0;
-	color: #234e6d;
+  font-family: Arial;
+  margin: 0;
 }
 
-/* Top-bar Headers and their Styling starts here */
-.header {
-	padding: 30px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	background-color: #234e6d;
-	color: #D0D0D0;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
 }
 
-
-.header h1 {
-	display: inline-block;
-	font-size: 40px
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background: var(--primary);
+  color: var(--secondary);
 }
 
-.brighten {
-	color: lime;
-	text-decoration: underline;
+.main-header nav {
+	display: flex;
+	color: var(--secondary);
 }
 
-.header nav {
-	padding-top: 15px;
-	margin-right: 5px;
-	float: right;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 22px;
+.card {
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
 }
 
-.header nav ul {
-	list-style-type: none;
-	color:#D0D0D0
-}
-
-.header nav ul li {
-	display: inline-block;
-	margin-left: 25px;
-}
-
-.header h2 {
-	padding-top: 100px;
-	margin-right: 5px;
-	float: right;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 35px;
-	color:  #234e6d;
-}
-
-.header h2 strong {
-	display: block;
-	font-size: 75%;
-	opacity: .75;
-}
-
-a {
-	color: 
-	text-decoration: 
-}
-
-/* Styling for the paragraphs of information in Contents and Aside left-sidebar */
-p {
-	font-size: px;
-} 
-
-/* Styling for first, center-mid image */
-/* .hero {
-	height: 800px;
-	width: 100%;
-	margin-bottom: 25px;
-	background-image: url("../images/digital-marketing-meeting.jpg");
-	background-size: cover;
-	background-position: center; */
-}
-
-/* Styling for Contents and their Images */
-.content {
-	width: 75%;
-	display: inline-block;
-	margin-left: 20px;
-}
-
-.content article {
-	margin-bottom: 
-	padding:
-	height:
-	font-family:
-	background-color: 
-	color: 
-}
-
-.content h2 {
-	margin-bottom: 
-	font-size: 
-}
-
-.content img {
-	max-height: 
-}
-
-.float-left {
-	float: 
-	margin-right: 
-}
-
-.float-right {
-	float: 
-	margin-left: 
-}
-
-/* Styling for the Benefits aside on the right-side of the webpage */
-.benefits {
-	margin-right: 
-	padding: 
-	clear: 
-	float: 
-	width: 
-	height: 
-	font-family: 
-	background-color: 
-}
-
-.benefits aside {
-	margin-bottom: 
-	color: 
-}
-
-.benefits h3 {
-	margin-bottom: 
-	text-align: 
-}
-
-.benefits img {
-	display: 
-	margin: 
-	max-width:  
-}
-
-/* Horiseon Footer at the bottom-center of the wepbage */
-.footer {
-	padding: 30px;
-	clear: both;
-	font-family: 
-	text-align: center;
-}
-
-.footer h4 {
-	font-size: 20px;
+.card header {
+  padding: 20px;
+  background-color: var(--primary);
+  color: var(--third);
 }
