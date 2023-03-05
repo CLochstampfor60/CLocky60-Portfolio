@@ -13,9 +13,9 @@
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif
+	font-family: Arial, Helvetica, sans-serif;
 	color: var(--primary);
-	background-color: var(--secondary)
+	background-color: var(--secondary);
 }
 
 header {
@@ -44,6 +44,8 @@ header a {
 	font-size: 20px;
 	padding: 15px;
 	font-weight: bold;
+	text-decoration-line: underline;
+	text-underline-offset: 20%;
 }
 
 header nav {
@@ -102,7 +104,7 @@ header nav ul li a:hover {
 }
 
 .title h2 {
-	font-size: 48px;
+	font-size: 40px;
 }
 
 .about-me {
@@ -190,21 +192,29 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-  padding-top: 30px;
-	margin-bottom: 30px;
+  padding-top: 20px;
+	padding-bottom: 20px;
+	/* margin-bottom: 30px; */
 	color: var(--secondary);
 	background-color: var(--primary);
 }
 
-.end-wrapper {
+/* .end-wrapper {
 	width: 80%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+	justify-content: right;
+	align-items: right;
+} */
 
-#contact-list {
+/* #contact-list {
 	width: 60%;
+} */
+
+footer ul {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+list-style: none;
 }
 
 footer ul li {
@@ -213,17 +223,18 @@ footer ul li {
 }
 
 footer ul li a {
-	text-decoration: underline;
-	color: var(--primary);
-	padding: 8px;
+	color: var(--secondary);
+	font-size: 20px;
+	padding: 0px;
 	font-weight: bold;
-	background-color: var(--secondary);
-	border-radius: 15px;
+	text-decoration: underline;
+	text-underline-offset: 20%;
 }
 
 footer ul li a:hover {
 	background: var(--third);
-	color: var(--pop);
+	color: var(--primary);
+	text-decoration: none;
 	border-radius: 15px;
 }
 
