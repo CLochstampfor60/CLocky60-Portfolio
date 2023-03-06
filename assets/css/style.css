@@ -8,6 +8,10 @@
 	--pop: #122738;
 }
 
+.image-style (
+	text-decoration: underline;
+)
+
 /* Webpage's basic, skeletal framework. */
 * {
 	margin: 0;
@@ -76,8 +80,13 @@ header nav ul li a:hover {
 
 /* Banner picture area under the top Header */
 .hero {
-	background-image: url(/assets/images/Magic-Castle.jpg);
-	height: 400px;
+	background-image: url("../images/Lochness-Monster-3.png");
+	/* <cite>
+	https://www.clker.com/cliparts/b/f/5/b/15163068201302902838loch-ness-monster-clipart.med.png
+	https://www.clker.com/clipart-598598.html
+	https://www.nottinghampost.com/news/uk-world-news/loch-ness-monster-spotted-eighth-5727612
+	</cite> */
+	height: 425px;
 	/* width: 100%; */
 	margin-bottom: 35px;
 	background-size: cover;
@@ -97,10 +106,13 @@ header nav ul li a:hover {
 	font-weight: bold;
 	font-style: italic;
 	display: flex;
-	justify-content: end;
+	justify-content: flex-end;
 	text-align: center;
+	margin-left: 200px;
+	margin-bottom: 140px;
 	color: var(--pop);
 }
+
 
 /* Side-section Title styling, describing their left-side contents. Simpler than assigning a standard side-bar. */
 .title {
