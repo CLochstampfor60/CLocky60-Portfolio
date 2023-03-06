@@ -1,3 +1,5 @@
+
+/* Universal colors abbreviated for greater coding ease. */
 :root	{
 	--primary: #234e6d;
 	--secondary: #D0D0D0;
@@ -6,6 +8,7 @@
 	--pop: #122738;
 }
 
+/* Webpage's basic, skeletal framework. */
 * {
 	margin: 0;
 	padding: 0;
@@ -18,6 +21,7 @@ body {
 	background-color: var(--secondary);
 }
 
+/* Top page Header */
 header {
 	display: flex;
 	justify-content: space-between;
@@ -30,6 +34,7 @@ header div {
 	box-shadow: 6px 6px 6px var(--third);
 }
 
+/* Top Header Dev Name */
 header h1 {
 	font-size: 40px;
 	font-weight: bold;
@@ -39,7 +44,17 @@ header h1 {
 	border: 5px solid var(--pop);
 }
 
-header a {
+/* Top right Table of Contents: navigate to their relevant sections of the webpage. */
+header nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 15px;
+	/* margin: 15px; */
+	list-style: none;
+}
+
+header nav ul a {
 	color: var(--secondary);
 	font-size: 20px;
 	padding: 15px;
@@ -48,25 +63,18 @@ header a {
 	text-underline-offset: 20%;
 }
 
-header nav {
-	margin: 10px;
-	text-decoration: none;
-}
-
-header nav ul {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	list-style: none;
-}
-
+/* User-friendly cursor hover-over response. */
 header nav ul li a:hover {
 	background: var(--third);
 	color: var(--primary);
-	text-decoration: none;
+	font-size: 20px;
+	padding: 15px;
+	font-weight: bold;
 	border-radius: 15px;
+	text-decoration: none;
 }
 
+/* Banner picture area under the top Header */
 .hero {
 	background-image: url(/assets/images/Magic-Castle.jpg);
 	height: 400px;
@@ -94,6 +102,7 @@ header nav ul li a:hover {
 	color: var(--pop);
 }
 
+/* Side-section Title styling, describing their left-side contents. Simpler than assigning a standard side-bar. */
 .title {
 	border-right: 5px solid var(--pop);
 	min-height: 100%;
@@ -107,6 +116,7 @@ header nav ul li a:hover {
 	font-size: 40px;
 }
 
+/* 1st navigated section: About Me. */
 .about-me {
 	display: flex;
 	justify-content: space-between;
@@ -116,43 +126,30 @@ header nav ul li a:hover {
 
 .about-me p {
 	font-size: 20px;
-	padding: 0 30px;
+	padding: 0 40px;
 	line-height: 1.6;
 	width: 90%;
 }
 
+/* 2nd navigated section: Work. */
 .work {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 0;
 }
-
+/* 'Work' title on the left side */
 .work h2 {
 	/* color: var(--primary)
 	background-color: var(var(--third)); */
 }
 
-.portfolio-grid-boxes-wrapper {
-	width: 80%;
-	height: 500px;
-	display: flex;
-	justify-content: center;
-}
-
-.portfolio-grid-boxes {
-  width: 70%;
-	display: grid;
-	grid-template-columns: repeat (2, 1fr);
-	grid-template-rows: repeat(4,1fr);
-	gap: 10px;
-}
-
+/* Work Portfolio organized within a simple grid in the center of the page. */
 .portfolio {
 	border: solid;
 	color: var(--fourth);
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: flex-end;
 	text-decoration: none;
 	background-size: cover;
@@ -160,34 +157,66 @@ header nav ul li a:hover {
 	/* opacity: 0.5; */
 }
 
-.portfolio:hover {
-	/* opacity: 1.0; */
+.portfolio-grid-boxes-wrapper {
+	width: 80%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+}
+
+.portfolio-grid-boxes {
+  width: 80%;
+	display: grid;
+	grid-template-columns: repeat (2, 1fr);
+	grid-template-rows: repeat(4,1fr);
+	gap: 10px;
+}
+
+.project-label {
+	background-color: var(--pop);
+	color: var(--secondary);
+	padding: 10px;
+	padding-bottom: 10px;
+}
+
+.project-label h3{
+	font-size: larger;
+	padding-bottom: 5px;
+}
+
+.project-label p {
+	font-size: small;
 }
 
 .project1 {
 	grid-column: 1/3;
 	grid-row: span 2;
-	background-image: url("../images/MorningSky.jpg");
+	background-image: url("../images/Penguins.jpg");
 }
 
 .project2 {
-	background-image: url(../images/Jesus-Nodder.jpg);
+	background-image: url("../images/MorningSky.jpg");
 	background-position: 50% 15%;
 }
 
 .project3 {
-	background-image: url(../images/ElfHabitat.jpg);
+	background-image: url("../images/ElfHabitat.jpg");
 	background-position: 60% 50%;
 }
 
 .project4 {
-	background-image: url(../images/IcePalace.jpg);
+	background-image: url("../images/Jesus-Mosaic.jpg")
 }
 
 .project5 {
-	background-image: url(../images/Finn-Eyeing.JPG);
+	background-image: url("../images/Finn-Eyeing.jpg");
 }
 
+.portfolio:hover {
+	/* opacity: 1.0; */
+}
+
+/* 3rd navigated section: Contact List. */
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -199,17 +228,6 @@ footer {
 	background-color: var(--primary);
 }
 
-/* .end-wrapper {
-	width: 80%;
-	display: flex;
-	justify-content: right;
-	align-items: right;
-} */
-
-/* #contact-list {
-	width: 60%;
-} */
-
 footer ul {
 display: flex;
 justify-content: center;
@@ -220,12 +238,13 @@ list-style: none;
 footer ul li {
 	/* padding-bottom: 10px; */
 	font-weight: bold;
+	margin: 10px;
 }
 
 footer ul li a {
 	color: var(--secondary);
 	font-size: 20px;
-	padding: 0px;
+	padding: 15px;
 	font-weight: bold;
 	text-decoration: underline;
 	text-underline-offset: 20%;
@@ -331,3 +350,13 @@ footer ul li a:hover {
 
 
 
+/* .end-wrapper {
+	width: 80%;
+	display: flex;
+	justify-content: right;
+	align-items: right;
+} */
+
+/* #contact-list {
+	width: 60%;
+} */
