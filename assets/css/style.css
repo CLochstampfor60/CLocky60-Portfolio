@@ -244,7 +244,7 @@ header nav ul li a:hover {
 }
 
 .project5 {
-	background-image: url(../images/FinnEyes.jpg);
+	background-image: url("../images/FinnEyes.jpg");
 	/* target="_blank" */
 }
 
