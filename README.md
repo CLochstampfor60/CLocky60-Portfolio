@@ -57,7 +57,7 @@ ___
    * URL of the <u>deployed application</u>: [Student's Web Application: Locky's Lagoon](https://clochstampfor60.github.io/CLocky60-Portfolio/)
 
 
-  *  URL of the application's <u>GitHub Repository</u>: [CLochstampfor60](https://github.com/CLochstampfor60)
+  *  URL of the application's <u>GitHub Repository</u>: [CLocky60](https://github.com/CLochstampfor60)
 
 
 ## License
