@@ -18,22 +18,22 @@ ___
 <u>GIVEN</u> I need to sample a potential employee's previous work...
 
 * <i>WHEN</i> I load their portfolio,
-* <b>THEN</b> I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them.
+ <br><b>THEN</b> I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them.
 
 * <i>WHEN</i> I click one of the links in the navigation,
-* <b>THEN</b> the UI scrolls to the corresponding section.
+ <br><b>THEN</b> the UI scrolls to the corresponding section.
 
 * <i>WHEN</i> I click on the link to the section about their work,
-* <b>THEN</b> the UI scrolls to a section with titled images of the developer's applications.
+<br><b>THEN</b> the UI scrolls to a section with titled images of the developer's applications.
 
 * <i>WHEN</i> I am presented with the developer's first application,
-* <b>THEN</b> that application's image should be larger in size than the others.
+<br><b>THEN</b> that application's image should be larger in size than the others.
 
 * <i>WHEN</i> I click on the images of the applications,
-* <b>THEN</b> I am taken to that deployed application.
+<br><b>THEN</b> I am taken to that deployed application.
 
 * <i>WHEN</i> I resize the page or view the site on various screens and devices,
-* <b>THEN</b> I am presented with a responsive layout that adapts to my viewport.
+<br><b>THEN</b> I am presented with a responsive layout that adapts to my viewport.
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 ## Student's Submitted Work:
 
-   * URL of the <u>deployed application</u>: [Student's Web Application: Locky's Lagoon](###########)
+   * URL of the <u>deployed application</u>: [Student's Web Application: Locky's Lagoon](https://clochstampfor60.github.io/CLocky60-Portfolio/)
 
 
   *  URL of the application's <u>GitHub Repository</u>: [CLocky60](https://github.com/CLochstampfor60/CLocky60-Portfolio)
