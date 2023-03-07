@@ -105,6 +105,15 @@ header nav ul li a:hover {
 	color: var(--pop);
 }
 
+figcaption {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 10px;
+	color: var(--pop);
+	padding-top: 350px;
+}
 
 /* Side-section Title styling, describing their left-side contents. Simpler than assigning a standard side-bar. */
 .title {
