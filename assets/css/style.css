@@ -28,6 +28,7 @@ header {
 	flex-wrap: wrap;
 	padding: 20px;
 	background-color: var(--primary);
+	background-attachment: fixed;
 }
 
 header div {
@@ -76,43 +77,60 @@ header nav ul li a:hover {
 
 /* Banner picture area under the top Header */
 .hero {
-	background-image: url("../images/Lochness-Monster-3.png");
+	/* background-image: url("../images/Lochness-Monster-3.png"); */
 	/* <cite>
 	https://www.clker.com/cliparts/b/f/5/b/15163068201302902838loch-ness-monster-clipart.med.png
 	https://www.clker.com/clipart-598598.html
 	https://www.nottinghampost.com/news/uk-world-news/loch-ness-monster-spotted-eighth-5727612
 	</cite> */
-	height: 425px;
-	/* width: 100%; */
-	margin-bottom: 35px;
-	background-size: cover;
+	/* height: auto;
+	width: 100%; */
+	/* background-size: cover;
 	background-position: center;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border: 6px solid var(--pop);
+	margin-bottom: 25px; */
+}
+
+.container {
+	position: relative;
+	/* margin: 15px; */
+	object-fit: contain;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border: 8px solid var(--pop);
+}
+
+.container .quote {
+	position: absolute;
+	justify-content: center;
+	top: 70px;
+	right: 175px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	color: var(--pop);
+}
+
+.source {
+	font-size: 20px;
+	position: absolute;
+	color: var(--fourth);
+	top: 580px;
+	right: 200px;
 }
 
 .hero p {
-	font-size: 40px;
-	font-weight: bold;
-	font-style: italic;
-	display: flex;
-	justify-content: flex-end;
-	text-align: center;
-	margin-left: 200px;
-	margin-bottom: 140px;
-	color: var(--pop);
-}
-
-figcaption {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	text-align: center;
-	font-size: 10px;
-	color: var(--pop);
-	padding-top: 350px;
+	/* display: flex; */
+	/* justify-content: flex-end;
+	text-align: center; */
+	/* margin-left: 200px;
+	margin-bottom: 140px; */
 }
 
 /* Side-section Title styling, describing their left-side contents. Simpler than assigning a standard side-bar. */
@@ -120,10 +138,10 @@ figcaption {
 	border-right: 5px solid var(--pop);
 	min-height: 100%;
 	text-align: right;
-	padding-right: 20px;
+	padding-right: 40px;
 	min-width: 20%;
 	max-width: 20%;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .title h2 {
@@ -135,7 +153,7 @@ figcaption {
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
-	padding-top: 0%;
+	padding-top: 2%;
 }
 
 .about-me img {
@@ -215,6 +233,8 @@ figcaption {
 	padding: 5px;
 	padding-right: 3%;
 	padding-bottom: 2%;
+	opacity: .8;
+	text-decoration:;
 	/* padding-left: 1%; */
 }
 
@@ -264,11 +284,11 @@ footer {
 	flex-wrap: wrap;
   padding-top: 15px;
 	padding-bottom: 20px;
-	/* margin-bottom: 30px; */
 	color: var(--secondary);
 	background-color: var(--primary);
 	border-top: 5px solid var(--pop);
 }
+
 
 
 footer ul {
@@ -281,7 +301,7 @@ list-style: none;
 footer ul li {
 	/* padding-bottom: 10px; */
 	font-weight: bold;
-	margin: 10px;
+	/* margin: 10px; */
 }
 
 footer ul li a {
@@ -303,14 +323,14 @@ footer ul li a:hover {
 /* Media Query for Tablet Screens and Smaller. */
 
 @media screen and (max-width: 768px) {
-	.hero .p {
-			font-size: 28px;
-			padding-right: 20px;
+	/* .hero .p {
+			text align: left;
+			margin: 60px;
 	}
 	
 	.hero .p {
-			font-size: 35px;
-	}
+			font-size: 20px;
+	} */
 
 	.title h2 {
 			font-size: 35px;
@@ -324,17 +344,17 @@ footer ul li a:hover {
 }
 
 /* MEDIA QUERY FOR MOBILE PHONE SCREENS AND SMALLER */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
 	header {
 			justify-content: center;
-			padding: 20px;
+			/* padding: 20px; */
 	}
 
 	header nav ul {
 			min-height: 80px;
 	}
 
-	.hero {
+	.container {
 			flex-direction: column;
 	}
 
@@ -348,19 +368,19 @@ footer ul li a:hover {
 			text-align: center;
 			min-width: 100%;
 			max-width: 100%;
-			padding: 0;
+			padding: 15px;
 	}
 
 	.about-me p {
 			font-size: 16px;
 			line-height: 1.6;
 			width: 100%;
-			padding: 15px;
+			padding: 5px;
 	}
 
 	.work {
 			flex-direction: column;
-			padding: 30px 0;
+			/* padding: 0px 00px; */
 	}
 
 	.portfolio-grid-boxes-wrapper {
@@ -376,12 +396,16 @@ footer ul li a:hover {
 		flex-direction: column;
 }
 
+/* .footer .contact-me {
+	font-size: 16px;
+} */
+
 	footer ul {
 		flex-direction: column;
 }
 
-	.end-wrapper {
-		width: 100%;
+	/* .end-wrapper {
+		width: 100%; */
 }
 
 	footer ul li {
@@ -389,15 +413,5 @@ footer ul li a:hover {
 		text-align: center;
 }
 
-}
 
-/* .end-wrapper {
-	width: 80%;
-	display: flex;
-	justify-content: right;
-	align-items: right;
-} */
 
-/* #contact-list {
-	width: 60%;
-} */
