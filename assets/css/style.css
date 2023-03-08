@@ -93,7 +93,7 @@ header nav ul li a:hover {
 	margin-bottom: 25px; */
 }
 
-.container {
+container {
 	position: relative;
 	/* margin: 15px; */
 	object-fit: contain;
