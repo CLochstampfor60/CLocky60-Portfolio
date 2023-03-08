@@ -99,7 +99,7 @@ container {
 	object-fit: contain;
 }
 
-img {
+.container img {
 	width: 100%;
 	height: auto;
 	border: 8px solid var(--pop);
